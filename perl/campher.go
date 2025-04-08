@@ -30,7 +30,7 @@ package perl
 #cgo CFLAGS: -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
 #cgo LDFLAGS:  -L/usr/local/lib -lperl -ldl -lm -lpthread -lc
 #cgo !darwin CFLAGS: -I/usr/lib/perl5/5.40.0/x86_64-linux-thread-multi/CORE
-#cgo !darwin LDFLAGS: -Wl,-E -lcrypt -L/usr/lib/perl5/5.40.0/x86_64-linux-thread-multi/CORE/EXTERN.h
+#cgo !darwin LDFLAGS: -Wl,-E -lcrypt -L/usr/lib/perl5/5.40.0/x86_64-linux-thread-multi/CORE/libperl.so
 #include <EXTERN.h>
 #include <perl.h>
 #include "campher.h"
