@@ -28,7 +28,7 @@ package perl
 
 /*
 #cgo CFLAGS: -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-#cgo LDFLAGS:  -fstack-protector -L/usr/local/lib -lperl -ldl -lm -lpthread -lc
+#cgo LDFLAGS:  -L/usr/local/lib -lperl -ldl -lm -lpthread -lc
 #cgo !darwin CFLAGS: -I/usr/lib/perl/5.10/CORE
 #cgo !darwin LDFLAGS: -Wl,-E -lcrypt -L/usr/lib/perl/5.10/CORE
 #cgo darwin CFLAGS: -I/System/Library/Perl/5.18/darwin-thread-multi-2level/CORE
